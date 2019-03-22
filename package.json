@@ -1,0 +1,14 @@
+{
+  "name": "file-processing",
+  "version": "1.0.0",
+  "description": "processing a list of words in different ways",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "mdoery@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.0.2"
+  }
+}
