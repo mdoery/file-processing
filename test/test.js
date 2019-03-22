@@ -10,7 +10,7 @@ describe('test', function() {
   describe('#getWordsAsArray()', function() {
     it('should return list of words', function() {
       return getWordsAsArray('test/data.txt').then(function(value) {
-        assert.deepEqual(value, ['PLOT','SAMPLE','DATA','INFINITE','BEST','BESTIES','LEAST','TESTS','TEST','EXAMPLE','EXAMPLES'],
+        assert.deepEqual(value, ['PLOT','SAMPLE','DATA','INFINITE','BEST','BESTIES','LEAST','TESTS','TEST','EXAMPLE','EXAMPLES','SUCCESS'],
         'got ' + JSON.stringify(value));
       }).catch(function(err) {
         throw new Error('Failed returning list of words');

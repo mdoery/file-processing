@@ -9,9 +9,8 @@ const fs = require('fs');
 var removePlurals = function(words) {
 	var result = words.filter(function(w) {
 		var lower = w.toLowerCase();
-		if (lower.endsWith('s')) {
-			var l1 = lower.length - 1;
-			return lower[l1].toLowerCase() !== 's';
+		if (lower.endsWith('s') && !lower.endsWith('ss')) {
+			return false;
 		} else {
 			return true;
 		}
